@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Tilt+Prism&display=swap");
+      body {
+        font-family: Poppins;
+      }
+      .container {
+        background: rgb(6, 2, 87);
+
+        background: linear-gradient(
+          137deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(9, 98, 121, 0.6700805322128851) 25%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        color: white;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        /* background-color: black; */
+        border-radius: 10px;
+        padding: 10px;
+        margin: auto;
+        margin-top: auto;
+        margin-top: 100px;
+      }
+      input {
+        height: 30px;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      button {
+        padding: 5px;
+        width: 50px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      button:hover {
+        background-color: black;
+        color: white;
+        border-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <label for="email">Email</label>
+      <input name="email" id="email" type="email" placeholder="email" />
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="password" />
+      <button class="button-81" onclick="logIn()">LogIn</button>
+      <span>Dont have an account? <a href="signup.html">Sign Up</a> </span>
+      <div id="message" class="message"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
